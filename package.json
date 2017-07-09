@@ -1,0 +1,33 @@
+{
+  "name": "cssjs",
+  "version": "1.0.0",
+  "description": "my own css, collect css class and test",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-imagemin" : "^3.0.0"
+  },
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp sass"
+  },
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "del": "^3.0.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KimDoYoung/cssjs_with_gulp.git"
+  },
+}

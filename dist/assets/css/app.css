@@ -1,0 +1,13 @@
+body {
+  background-color: #e8f4d4; }
+
+.box {
+  overflow: visible;
+  position: relative;
+  border: 0;
+  padding: 5px;
+  height: 200px;
+  width: 200px;
+  color: #c6b5b5;
+  background: #435970;
+  border-radius: 10px; }
