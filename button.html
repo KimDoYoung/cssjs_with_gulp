@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>buttons</title>
+    <link rel="stylesheet" href="dist/assets/css/app.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <a href="#" title="button1" class="button">버튼 1</a>
+  <a class="button-1" href="#" role="button" title="https://dcrazed.com/css-buttons-nice-hover-effects/">
+	<span>remove</span>
+	<div class="icon">
+		<i class="fa fa-remove"></i>
+		<i class="fa fa-check"></i>
+	</div>
+</a>
+<script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+<script>
+$( document ).ready(function() {
+    console.log('ready...');
+    $(".button-1").on('click',function(){
+      console.log('button-1 clicked');
+      $this = $(this);
+      if($this.hasClass('success')){
+        $this.addClass('removeSuccess').addClass("success");
+      }else {
+        $this.addClass('success').addClass("removeSuccess");
+        setTimeout(function(){ $(".button-1").addClass('success').addClass("removeSuccess");}, 3000);
+      }
+    });
+});
+</script>
+</body>
+</html>

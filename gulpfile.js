@@ -10,7 +10,8 @@ var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 var $ = require('gulp-load-plugins')();
 var browserSync = require('browser-sync').create();
-var  imagemin = require('gulp-imagemin');
+var imagemin = require('gulp-imagemin');
+
 var sassPaths = [
 ];
 var config = {
@@ -24,12 +25,13 @@ gulp.task('sass', function () {
                 includePaths: sassPaths,
                 outputStyle: 'nested' // nested,compressed
             })
-            .on('error', $.sass.logError))
+           .on('error', $.sass.logError))
         .pipe($.autoprefixer({
             browsers: ['last 2 versions', 'ie >= 9']
         }))
-        .pipe(gulp.dest('dist/assets/css'));
+        .pipe(gulp.dest(config.desPath + 'css'));
 });
+
 gulp.task('imagemin', () =>
 	gulp.src(config.srcPath + 'images/*')
 		.pipe(imagemin())

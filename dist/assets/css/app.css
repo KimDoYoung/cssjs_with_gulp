@@ -1,5 +1,124 @@
-body {
-  background-color: #e8f4d4; }
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(https://fonts.googleapis.com/css?family=Oswald:700);
+.graybg1 {
+  background-color: rgba(111, 111, 111, 0.05); }
+
+.graybg2 {
+  background-color: rgba(111, 111, 111, 0.1); }
+
+.graybg3 {
+  background-color: rgba(111, 111, 111, 0.15); }
+
+.graybg4 {
+  background-color: rgba(111, 111, 111, 0.2); }
+
+.graybg5 {
+  background-color: rgba(111, 111, 111, 0.25); }
+
+.graybg6 {
+  background-color: rgba(111, 111, 111, 0.3); }
+
+.graybg7 {
+  background-color: rgba(111, 111, 111, 0.35); }
+
+.graybg8 {
+  background-color: rgba(111, 111, 111, 0.4); }
+
+.graybg9 {
+  background-color: rgba(111, 111, 111, 0.45); }
+
+.graybg10 {
+  background-color: rgba(111, 111, 111, 0.5); }
+
+@font-face {
+  font-family: 'NanumSquare';
+  src: url(./fonts/NanumSquareR.eot);
+  src: url(./fonts/NanumSquareR.eot?#iefix) format("embedded-opentype"), url(./fonts/NanumSquareR.woff) format("woff"), url(./fonts/NanumSquareR.ttf) format("truetype"); }
+
+.button {
+  padding: .3em .8em;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #58a linear-gradient(rgba(255, 255, 255, 0.2), transparent);
+  border-radius: 0.2em;
+  box-shadow: 0 0.05em 0.25em rgba(0, 0, 0, 0.5);
+  color: white;
+  text-shadow: 0 -0.05em 0.05em rgba(0, 0, 0, 0.5);
+  font-size: 125%;
+  line-height: 1.5;
+  background-color: #c00; }
+
+/* Main Styles */
+.button-1 {
+  display: block;
+  background-color: #c0392b;
+  width: 300px;
+  height: 100px;
+  line-height: 100px;
+  margin: auto;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4); }
+  .button-1 span,
+  .button-1 .icon {
+    display: block;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0; }
+  .button-1 span {
+    width: 72%;
+    line-height: inherit;
+    font-size: 22px;
+    text-transform: uppercase;
+    left: 0;
+    transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4); }
+    .button-1 span:after {
+      content: '';
+      background-color: #a53125;
+      width: 2px;
+      height: 70%;
+      position: absolute;
+      top: 15%;
+      right: -1px; }
+  .button-1 .icon {
+    width: 28%;
+    right: 0;
+    transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4); }
+    .button-1 .icon .fa {
+      font-size: 30px;
+      vertical-align: middle;
+      transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4), height 0.25s ease; }
+    .button-1 .icon .fa-remove {
+      height: 36px; }
+    .button-1 .icon .fa-check {
+      display: none; }
+  .button-1.success span, .button-1:hover span {
+    left: -72%;
+    opacity: 0; }
+  .button-1.success .icon, .button-1:hover .icon {
+    width: 100%; }
+    .button-1.success .icon .fa, .button-1:hover .icon .fa {
+      font-size: 45px; }
+  .button-1.success {
+    background-color: #27ae60; }
+    .button-1.success .icon .fa-remove {
+      display: none; }
+    .button-1.success .icon .fa-check {
+      display: inline-block; }
+  .button-1:hover {
+    opacity: .9; }
+    .button-1:hover .icon .fa-remove {
+      height: 46px; }
+  .button-1:active {
+    opacity: 1; }
 
 .box {
   overflow: visible;

@@ -1,0 +1,13 @@
+$primary:#f8535c; // eduticket color
+$white:#f9f9f9;
+$black:#000;
+$grey:#ccc;
+$footpart:#313131;
+$index-bottom:#439fe0;
+
+$edugray :  #6f6f6f;
+@for $c from 1 through 10 {
+  .graybg#{$c} {
+    background-color: rgba($edugray, $c * .05);
+  }
+}
